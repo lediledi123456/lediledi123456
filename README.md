@@ -20,4 +20,33 @@ You can click the Preview link to take a look at your changes.
               globalchannel.send(embed)
             };
             }
-          })```
+          })``````const Department3 = new Discord.MessageEmbed()
+                .setTitle(`> Die **${supportbot.DepartmentTitle_3}** Abteilung wird sich gleich um das Anliegen kümmern. Bitte gebe uns Informationen zu der Anfrage.`)
+                  .setColor(supportbot.EmbedColour)
+                SupportTicket.send({ embed: Department3 });
+
+                if (supportbot.AllowTicketMentions) {
+                  SupportTicket.send(`@here`)
+                }
+
+              const Discord = require('discord.js')
+const bot = new Discord.Client()
+const TOKEN = 'da drin ist der token halt xd'
+const prefix = '!'
+ 
+bot.on('ready', () => {
+    console.log('Der Bot ist nun Online!')
+ 
+    bot.user.setPresence({
+        activity: {
+            name: '!help' ,
+            type: 'PLAYING',
+        },
+        status: 'online'
+    })
+})
+ 
+bot.login(TOKEN)
+
+              
+```

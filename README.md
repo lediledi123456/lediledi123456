@@ -20,4 +20,15 @@ You can click the Preview link to take a look at your changes.
               globalchannel.send(embed)
             };
             }
-          })```
+          })``````const Department3 = new Discord.MessageEmbed()
+                .setTitle(`> Die **${supportbot.DepartmentTitle_3}** Abteilung wird sich gleich um das Anliegen kümmern. Bitte gebe uns Informationen zu der Anfrage.`)
+                  .setColor(supportbot.EmbedColour)
+                SupportTicket.send({ embed: Department3 });
+
+                if (supportbot.AllowTicketMentions) {
+                  SupportTicket.send(`@here`)
+                }
+
+              }
+              
+```
